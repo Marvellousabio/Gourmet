@@ -8,7 +8,7 @@ interface FoodPlateProps {
 
 const FoodPlate: React.FC<FoodPlateProps> = ({ image, title }) => {
   return (
-    <div className="absolute left-10 lg:left-20 z-20 pointer-events-none">
+    <div className="relative z-20 pointer-events-none flex-shrink-0">
       <AnimatePresence mode="wait">
         <motion.div
           key={title}
@@ -22,12 +22,12 @@ const FoodPlate: React.FC<FoodPlateProps> = ({ image, title }) => {
           className="relative"
         >
           {/* Shadow effect */}
-          <div className="absolute inset-0 bg-black/10 blur-3xl rounded-full transform translate-y-10 scale-90" />
+          <div className="absolute inset-0 bg-black/10 blur-3xl rounded-full transform translate-y-4 sm:translate-y-6 lg:translate-y-10 scale-90" />
           
           <img
             src={image}
             alt={title}
-            className="w-[300px] md:w-[450px] lg:w-[550px] h-auto object-contain drop-shadow-2xl rounded-full"
+            className="w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[500px] h-auto object-contain drop-shadow-2xl rounded-full"
             referrerPolicy="no-referrer"
           />
         </motion.div>
