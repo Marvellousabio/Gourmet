@@ -5,7 +5,7 @@ export const foods = [
     subtitle: "#1 Most loved dish",
     rating: 4.9,
     chef: "Chef Feny",
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80", // Placeholder for transparent PNG
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80", 
     description: "Large plate: Salad, peanut sauce, potato fritters. A traditional Indonesian favorite with a modern twist."
   },
   {

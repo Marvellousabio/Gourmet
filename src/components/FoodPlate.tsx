@@ -27,7 +27,7 @@ const FoodPlate: React.FC<FoodPlateProps> = ({ image, title }) => {
           <img
             src={image}
             alt={title}
-            className="w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[500px] h-auto object-contain drop-shadow-2xl rounded-full"
+            className="w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[500px] aspect-square object-cover drop-shadow-2xl rounded-full"
             referrerPolicy="no-referrer"
           />
         </motion.div>
